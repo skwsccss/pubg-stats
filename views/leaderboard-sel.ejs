@@ -1,0 +1,28 @@
+<div class="horizontal-full-width-spacer"></div>
+<div id="leaderboard-platform-sel-wrapper" class="container">
+    <div class="label">Platform</div>
+    <% var plats = [
+        { value: 'steam', name: 'Steam' },
+        { value: 'kakao', name: 'kakao' },
+        { value: 'psn', name: 'psn' },
+        { value: 'xbox', name: 'xbox' }
+    ]; %>
+    <ul id="leaderboard-platform-sel">
+        <% plats.forEach(function(p) { %>
+            <li class=<%= p.value === activePlatform ? 'selected' : 'not-selected' %> value=<%= p.value %> onclick="getLeaderboard(this)">
+                <%= p.name %>
+            </li>
+        <% }); %>   
+    </ul>
+    <div class="label">Game Mode</div>
+    <ul id="leaderboard-mode-sel">
+        <% var modes = [
+            'solo', 'solo-fpp', 'duo', 'duo-fpp', 'squad', 'squad-fpp'
+        ]; %>
+        <% modes.forEach(function(mode) { %>
+            <li class=<%= modeActive === mode ? 'selected' : 'not-selected' %> value=<%= mode %> onclick="getLeaderboard(this)">
+                <%= mode[0].toUpperCase() + mode.substr(1) %>
+            </li>
+        <% }); %>
+    </ul>
+</div>

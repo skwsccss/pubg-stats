@@ -1,0 +1,38 @@
+{
+  "name": "pubginfo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lintejs": "node ./node_modules/ejs-lint/cli.js -- file",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "body-parser": "^1.19.0",
+    "chart.js": "^2.9.3",
+    "chartist-plugin-legend": "^0.6.2",
+    "connect-memcached": "^1.0.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "lowdb": "^1.0.0",
+    "memcached": "^2.2.2",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "nodemon": "^2.0.2",
+    "squel": "^5.13.0",
+    "srcds-rcon": "^2.2.1",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.1"
+  },
+  "devDependencies": {
+    "ejs-lint": "^1.0.1"
+  }
+}

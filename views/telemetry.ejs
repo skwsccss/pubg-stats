@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+<%- include('header', { libs: [{ type: 'text/css', rel: 'stylesheet', href: 'chartist.min.css'}]}) %>
+
+<body onload="showPreloader();getTelemetries()">
+    <%- include('topnav', { active: 'Telemetry' }) %>
+    <div id="preloader" class="preloader-wrapper">
+        <div class="spinner-layer spinner-yellow-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-full-width-spacer"></div>
+    <div id="tele-container" class="container dont-show">
+        <!-- 2 cards with 2 graphs per row -->
+        <h3 class="header">Overview</h3>
+        <ul id="overview-list">
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Players Active (Steam)</span>
+                <span id="steam-player-count" class="overview-list-item-value"></span>
+            </li>
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Total Players</span>
+                <span id="players-count" class="overview-list-item-value"></span>
+            </li>
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Total Matches</span>
+                <span id="total-matches" class="overview-list-item-value"></span>
+            </li>
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Total Regions</span>
+                <span class="overview-list-item-value">10</span>
+            </li>
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Total Maps</span>
+                <span id="maps-count" class="overview-list-item-value"></span>
+            </li>
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Total Modes</span>
+                <span class="overview-list-item-value">6</span>
+            </li>
+            <li class="overview-list-item">
+                <span class="overview-list-item-label">Total Days</span>
+                <span id="total-days" class="overview-list-item-value"></span>
+            </li>
+        </ul>
+        <div class="row telem-row">
+            <div class="col telem-col">
+                <div class="card chart-card">
+                    <span class="card-title">TPP Vs FPP</span>
+                    <div class="card-content">
+                        <canvas id="tpp-fpp" width="100%" height="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col telem-col">
+                <div class="card chart-card">
+                    <span class="card-title">Match Distribution by Game Modes</span>
+                    <div class="card-content">
+                        <canvas id="match-distribution" width="100%" height="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row telem-row">
+            <div class="card chart-card">
+                <span class="card-title">Match Distribution by Region</span>
+                <div class="card-content">
+                    <canvas id="mdist-region" width="100%" height="100%"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row telem-row">
+            <div class="card chart-card">
+                <span class="card-title">Match Distribution by Maps</span>
+                <div class="card-content">
+                    <canvas id="mdist-maps" width="100%" height="100%"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row telem-row">
+            <div class="card chart-card">
+                <span class="card-title">Region Distribution by Maps</span>
+                <div class="card-content">
+                    <canvas id="reg-maps" width="100" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row telem-row">
+            <div class="card chart-card">
+                <span class="card-title">Region Distribution by Maps</span>
+                <div class="card-content">
+                    <canvas id="game-maps" width="100" height="100"></canvas>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <%- include('footer') %>
+
+</html>

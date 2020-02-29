@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <%- include('header') %>
+    <body>
+        <%- include('topnav', { active: 'Weapons Mastery' }) %>
+        <div class="horizontal-full-width-spacer"></div> 
+        <div class="container">
+            <div class="card" id="weapons-mastery-form-card"><!-- form start -->
+                <div class="card-content">
+                    <span class="card-title">
+                        <form>
+                            <input id="weapons-mastery-name-input" class="player-name-input"
+                                value="<%= playerName ? playerName : '' %>"
+                                placeholder="<%= playerName ? playerName : 'Enter player name' %>">
+                        </form>
+                    </span>
+                </div>
+                <div class="card-action">
+                    <% var activePlatform = !activePlatform ? 'steam' : activePlatform; %>
+                    <div class="label">Platform</div>
+                    <% var plats = [
+                        { value: 'steam', name: 'Steam' },
+                        { value: 'kakao', name: 'kakao' },
+                        { value: 'psn', name: 'psn' },
+                        { value: 'xbox', name: 'xbox' }
+                    ]; %>
+                    <div id="player-info-card-action-col">
+                        <ul id="player-info-platform-sel">
+                            <% plats.forEach(function(p) { %>
+                                <li class="<%= p.value === activePlatform ? 'selected' : 'not-selected' %> value=<%= p.value %>" 
+                                    onclick="selectPlatformPlayerStats(this)">
+                                    <%= p.name %>
+                                </li>
+                            <% }); %>   
+                        </ul>
+                        <a id="player-stats-search-button" class="btn waves-effect waves-light" onclick="getPlayerStats()">
+                            Search
+                            <i class="material-icons right">send</i>
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- form end -->
+        </div> <!-- container end -->
+
+    <%- include('footer') %>
+</html>

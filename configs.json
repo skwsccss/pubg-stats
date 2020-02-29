@@ -1,0 +1,34 @@
+{
+    "APIkey": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YjFjOGY3MC0xODAwLTAxMzgtZTIxMC03ZDVjOWM4YTdjZWUiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTc4ODk4ODUwLCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6ImRhdmUtYnJhZGR1a2UtIn0.n493QOgp9A3OU_FpeKZUN9ChzF09ZAGfCoJN5ro6rzI",
+    "SteamAPIKey": "B47CBAE4C40D9E0E62ECD36AFCF594E2",
+    "PUBGAppID": "578080",
+    "DBHOST": "localhost",
+    "DBUSER": "root",
+    "DBPASS": "",
+    "DBNAME": "pubg",
+    "REGIONS": [
+        { "code": "pc-as", "name": "Asia" },
+        { "code": "pc-eu", "name": "Europe" },
+        { "code": "pc-jp", "name": "Japan" },
+        { "code": "pc-kakao", "name": "Kakao" },
+        { "code": "pc-krjp", "name": "Korea" },
+        { "code": "pc-na", "name": "North America" },
+        { "code": "pc-oc", "name": "Oceania" },
+        { "code": "pc-ru", "name": "Russia" },
+        { "code": "pc-sa", "name": "South and Central America" },
+        { "code": "pc-sea", "name": "South East Asia" },
+        { "code": "pc-tournament", "name": "tournaments" }
+    ],
+    "GAME_MODES": [
+        "solo", "solo-fpp", "duo", "duo-fpp",
+        "squad", "squad-fpp"
+    ],
+    "SERVER_HOST": "127.0.0.1",
+    "SERVER_PORT": "4200",
+    "MEMCACHED_HOST": "127.0.0.1",
+    "MEMCACHED_PORT": 11211,
+    "IPFIND_API_KEY": "8a20f2a1-c3df-4f60-bcc6-f3d2b69c8cb9",
+    "SAMPLING_RATE": 25,
+    "TELEMETRY_UPDATE_INTERVAL": 120000,
+    "TELEMETRY_API_REQ_DELAY": 8900
+}

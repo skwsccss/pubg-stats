@@ -1,0 +1,1132 @@
+@media screen and (min-width: 320px) {
+    body {
+        overflow: scroll;
+    }
+    #topNav {
+        height: 12%;
+        display: block !important;
+    }
+    #topNav nav {
+        background-color: #f2a900;
+    }
+    #topNav-ul {
+        color: whitesmoke;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600;
+        margin-right: 5%;
+    }
+    #mobile-nav {
+        background-color: #f2a900;
+    }
+    #mobile-nav li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+    }
+    #nav-site-name {
+        font-size: 18px;
+        font-weight: 800;
+        color: rgba(246, 246, 246, 0.945);
+        margin-left: 0;
+        left: 22% !important;
+    }
+    #hero-unit {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+    }
+    #hero-image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .form-input {
+        max-width: 200px;
+        position: fixed;
+        top: 15%;
+        left: 25%;
+        color: gray;
+        display: flex;
+        flex-direction: row;
+    }
+    #search-field {
+        background-color: aliceblue;
+        font-size: 12px;
+        color: gray;
+        font-weight: 500;
+        height: 40px;
+    }
+    #search-icon {
+        color: aliceblue;
+        font-size: 25px;
+    }
+    #search-btn {
+        background-color: #f2a900;
+        height: 40px;
+    }
+    #leaderboard-platform-sel-wrapper {
+    }
+    #leaderboard-platform-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #leaderboard-platform-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 5px;
+        font-size: 13px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #leaderboard-platform-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    #leaderboard-platform-sel li:hover, #leaderboard-mode-sel li:hover {
+        background-color: #f2a900;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #leaderboard-mode-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #leaderboard-mode-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 5px;
+        font-size: 13px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #leaderboard-mode-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    .leaderboard-card-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
+    }
+    .leaderboard-top3-card-col {
+        width: 100%;
+    }
+    .leaderboard-top3-card {
+        width: 100%;
+    }
+    div.leaderboard-top3-card div.card-content {
+        padding: 10px;
+    }
+    #stats-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #player-info-card {
+        width: 100%;
+        padding: 10px;
+    }
+    #player-info-platform-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #player-info-platform-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 5px;
+        font-size: 13px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #player-info-platform-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    #player-info-platform-sel li:hover, #leaderboard-mode-sel li:hover {
+        background-color: #f2a900;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #player-stats-search-button {
+        background-color: #f2a900;
+        color: white;
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #player-info-card div.card-action {
+        display: flex;
+        flex-direction: column;
+    }
+    #player-info-card div.card-action label {
+        flex: 1;
+    }
+    #player-info-card-action-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #player-info-card-action-col ul {
+        flex: 0.65;
+    }
+    #player-info-card-action-col a.btn {
+        flex: 0.10;
+    }
+    .player-name-input {
+        background-color: white;
+        font-size: 24px;
+        color: #f2a900;
+        font-weight: 500;
+        padding: 10px;
+        max-width: 80%;
+    }
+    #player-info-name-input:focus {
+        border-bottom: #f2a900 !important;
+        box-shadow: 0 1px 0 0 #f2a900 !important;
+    }
+    #details-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .player-stat-card {
+        width: 100%;
+    }   
+    .player-stat-table {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .highlight-table {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .solo-card {
+        background-color: #4e6e58;
+        color: white;
+    }
+    .duo-card {
+        background-color: #99c5b5;
+        color: white;
+    }
+    .squad-card {
+        background-color: #175676;
+        color: white;
+    }
+    .other-stat-card {
+        background-color: #22333b;
+        color: white;
+    }
+    .telem-row {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .telem-col {
+        width: 100%;
+    }
+    /* Utility classes */
+    .horizontal-full-width-spacer {
+        width: 100%;
+        height: 100px;
+    }
+    .label {
+        font-size: 24px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #f2a900;
+        font-weight: 600;
+    }
+    .alt-row {
+        background-color: rgb(246, 246, 246);
+        color: rgb(70, 70, 70);
+    }
+    .attr-label {
+        font-size: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .attr-value {
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+    }
+    .horizontal-divider {
+        border-bottom: 1px solid #f2a900;
+        margin: 5px 0;
+        width: 100%;
+    }
+    .scrollable {
+        overflow-y: scroll;
+    }
+    .rank {
+        background-color: #f2a900;
+        border: 1px solid #f2a900;
+        color: white;
+        font-size: 18px;
+        font-family: 'Baskerville', serif;
+        padding: 10px;
+        display: block;
+        max-width: 30px;
+    }
+    .name {
+        color: gray;
+        font-weight: 500;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 12px;
+    }
+    .value {
+        color: gray;
+        font-weight: 600;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        margin-left: 25px;
+    }
+    #preloader {
+        margin: 0 auto !important;
+        width: 500px;
+        height: 500px;
+        position: fixed !important;
+        top: 25% !important;
+        left: 35% !important;
+    }
+    .dont-show {
+        display: none;
+    }
+    .dropdown-content li > span {
+        color: #f2a900;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+    }
+    .select-wrapper input {
+        color: #f2a900;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+    }
+    .err-text {
+        font-size: 20px;
+        color: rgb(175, 80, 80);
+        font-weight: 300;
+    }
+    .link {
+        font-weight: 400;
+        color: #f2a900;
+    }
+    .link:hover {
+        text-decoration: #f2a900 underline;
+    }
+    #overview-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background: #f2a900;
+    }
+    .overview-list-item {
+        padding: 20px;      
+    }
+    .overview-list-item-label {
+        display: block;
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        color: #fff;
+    }
+    .overview-list-item-value {
+        color: #fff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+    }
+    .header {
+        color: #f2a900;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .chart-card {
+        text-align: center;
+    }
+    /* canvas properties */
+    canvas {
+        height: 100% !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    body {
+        overflow: scroll;
+    }
+    #topNav {
+        height: 12%;
+        display: block !important;
+    }
+    #topNav nav {
+        background-color: #f2a900;
+    }
+    #topNav-ul {
+        color: whitesmoke;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600;
+        margin-right: 5%;
+    }
+    #mobile-nav {
+        background-color: #f2a900;
+    }
+    #mobile-nav li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+    }
+    #nav-site-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: rgba(246, 246, 246, 0.945);
+        margin-left: 0;
+        left: 17% !important;
+    }
+    #hero-unit {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+    }
+    #hero-image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .form-input {
+        max-width: 300px;
+        position: fixed;
+        top: 15%;
+        left: 35%;
+        color: gray;
+        display: flex;
+        flex-direction: row;
+    }
+    #search-field {
+        background-color: aliceblue;
+        font-size: 22px;
+        color: gray;
+        font-weight: 500;
+        height: 40px;
+    }
+    #search-icon {
+        color: aliceblue;
+        font-size: 25px;
+    }
+    #search-btn {
+        background-color: #f2a900;
+        height: 40px;
+    }
+    #leaderboard-platform-sel-wrapper {
+    }
+    #leaderboard-platform-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #leaderboard-platform-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #leaderboard-platform-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    #leaderboard-platform-sel li:hover, #leaderboard-mode-sel li:hover {
+        background-color: #f2a900;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #leaderboard-mode-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #leaderboard-mode-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #leaderboard-mode-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    .leaderboard-card-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
+    }
+    .leaderboard-top3-card-col {
+        width: 32%;
+    }
+    .leaderboard-top3-card {
+        width: 100%;
+    }
+    div.leaderboard-top3-card div.card-content {
+        padding: 10px;
+    }
+    #stats-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #player-info-card {
+        width: 100%;
+        padding: 10px;
+    }
+    #player-info-platform-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #player-info-platform-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #player-info-platform-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    #player-info-platform-sel li:hover, #leaderboard-mode-sel li:hover {
+        background-color: #f2a900;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #player-stats-search-button {
+        background-color: #f2a900;
+        color: white;
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #player-info-card div.card-action {
+        display: flex;
+        flex-direction: column;
+    }
+    #player-info-card div.card-action label {
+        flex: 1;
+    }
+    #player-info-card-action-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #player-info-card-action-col ul {
+        flex: 0.65;
+    }
+    #player-info-card-action-col a.btn {
+        flex: 0.10;
+    }
+    .player-name-input {
+        background-color: white;
+        font-size: 24px;
+        color: #f2a900;
+        font-weight: 500;
+        padding: 10px;
+        max-width: 80%;
+    }
+    #player-info-name-input:focus {
+        border-bottom: #f2a900 !important;
+        box-shadow: 0 1px 0 0 #f2a900 !important;
+    }
+    #details-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .player-stat-card {
+        width: 49%;
+    }
+    .player-stat-table {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .highlight-table {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .solo-card {
+        background-color: #4e6e58;
+        color: white;
+    }
+    .duo-card {
+        background-color: #99c5b5;
+        color: white;
+    }
+    .squad-card {
+        background-color: #175676;
+        color: white;
+    }
+    .other-stat-card {
+        background-color: #22333b;
+        color: white;
+    }
+    .telem-row {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .telem-col {
+        width: 100%;
+    }
+    /* Utility classes */
+    .horizontal-full-width-spacer {
+        width: 100%;
+        height: 100px;
+    }
+    .label {
+        font-size: 24px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #f2a900;
+        font-weight: 600;
+    }
+    .alt-row {
+        background-color: rgb(246, 246, 246);
+        color: rgb(70, 70, 70);
+    }
+    .attr-label {
+        font-size: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .attr-value {
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+    }
+    .horizontal-divider {
+        border-bottom: 1px solid #f2a900;
+        margin: 5px 0;
+        width: 100%;
+    }
+    .scrollable {
+        overflow-y: scroll;
+    }
+    .rank {
+        background-color: #f2a900;
+        border: 1px solid #f2a900;
+        color: white;
+        font-size: 18px;
+        font-family: 'Baskerville', serif;
+        padding: 10px;
+        display: block;
+        max-width: 30px;
+    }
+    .name {
+        color: gray;
+        font-weight: 500;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 12px;
+    }
+    .value {
+        color: gray;
+        font-weight: 600;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        margin-left: 25px;
+    }
+    #preloader {
+        margin: 0 auto !important;
+        width: 500px;
+        height: 500px;
+        position: fixed !important;
+        top: 25% !important;
+        left: 35% !important;
+    }
+    .dont-show {
+        display: none;
+    }
+    .dropdown-content li > span {
+        color: #f2a900;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+    }
+    .select-wrapper input {
+        color: #f2a900;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+    }
+    .err-text {
+        font-size: 20px;
+        color: rgb(175, 80, 80);
+        font-weight: 300;
+    }
+    .link {
+        font-weight: 400;
+        color: #f2a900;
+    }
+    .link:hover {
+        text-decoration: #f2a900 underline;
+    }
+    #overview-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background: #f2a900;
+    }
+    .overview-list-item {
+        padding: 20px;      
+    }
+    .overview-list-item-label {
+        display: block;
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        color: #fff;
+    }
+    .overview-list-item-value {
+        color: #fff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+    }
+    .header {
+        color: #f2a900;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .chart-card {
+        text-align: center;
+    }
+    /* canvas properties */
+    canvas {
+        max-height: 70% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 993px) {
+    body {
+        overflow: scroll;
+    }
+    #topNav {
+        height: 12%;
+        display: block !important;
+    }
+    #topNav nav {
+        background-color: #f2a900;
+    }
+    #topNav-ul {
+        color: whitesmoke;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600;
+        margin-right: 5%;
+    }
+    #nav-site-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: rgba(246, 246, 246, 0.945);
+        margin-left: 5%;
+    }
+    #hero-unit {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+    }
+    #hero-image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .form-input {
+        max-width: 500px;
+        position: fixed;
+        top: 50%;
+        left: 40%;
+        color: gray;
+        display: flex;
+        flex-direction: row;
+    }
+    #search-field {
+        background-color: aliceblue;
+        font-size: 40px;
+        color: gray;
+        font-weight: 500;
+        height: 50px;
+    }
+    #search-icon {
+        color: aliceblue;
+        font-size: 30px;
+    }
+    #search-btn {
+        background-color: #f2a900;
+        height: 50px;
+    }
+    #leaderboard-platform-sel-wrapper {
+    }
+    #leaderboard-platform-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #leaderboard-platform-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #leaderboard-platform-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    #leaderboard-platform-sel li:hover, #leaderboard-mode-sel li:hover {
+        background-color: #f2a900;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #leaderboard-mode-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #leaderboard-mode-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #leaderboard-mode-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    .leaderboard-card-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
+    }
+    .leaderboard-top3-card-col {
+        width: 32%;
+    }
+    .leaderboard-top3-card {
+        width: 100%;
+    }
+    #stats-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #player-info-card {
+        width: 100%;
+        padding: 10px;
+    }
+    #player-info-platform-sel {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #player-info-platform-sel li {
+        color: #f2a900;
+        background-color: transparent;
+        border: 1px solid #f2a900;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #player-info-platform-sel li.selected {
+        background-color: #f2a900;
+        color: aliceblue;
+    }
+    #player-info-platform-sel li:hover, #leaderboard-mode-sel li:hover {
+        background-color: #f2a900;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    #player-stats-search-button {
+        background-color: #f2a900;
+        color: white;
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    #player-info-card div.card-action {
+        display: flex;
+        flex-direction: column;
+    }
+    #player-info-card div.card-action label {
+        flex: 1;
+    }
+    #player-info-card-action-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #player-info-card-action-col ul {
+        flex: 0.65;
+    }
+    #player-info-card-action-col a.btn {
+        flex: 0.10;
+    }
+    .player-name-input {
+        background-color: white;
+        font-size: 24px;
+        color: #f2a900;
+        font-weight: 500;
+        padding: 10px;
+        max-width: 80%;
+    }
+    #player-info-name-input:focus {
+        border-bottom: #f2a900 !important;
+        box-shadow: 0 1px 0 0 #f2a900 !important;
+    }
+    #details-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .player-stat-card {
+        width: 32%;
+    }
+    .player-stat-table {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .highlight-table {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .solo-card {
+        background-color: #4e6e58;
+        color: white;
+    }
+    .duo-card {
+        background-color: #99c5b5;
+        color: white;
+    }
+    .squad-card {
+        background-color: #175676;
+        color: white;
+    }
+    .other-stat-card {
+        background-color: #22333b;
+        color: white;
+    }
+    .telem-row {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .telem-col {
+        width: 49%;
+    }
+    /* Utility classes */
+    .horizontal-full-width-spacer {
+        width: 100%;
+        height: 100px;
+    }
+    .label {
+        font-size: 32px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #f2a900;
+        font-weight: 600;
+    }
+    .alt-row {
+        background-color: rgb(246, 246, 246);
+        color: rgb(70, 70, 70);
+    }
+    .attr-label {
+        font-size: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .attr-value {
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+    }
+    .horizontal-divider {
+        border-bottom: 1px solid #f2a900;
+        margin: 5px 0;
+        width: 100%;
+    }
+    .scrollable {
+        overflow-y: scroll;
+    }
+    .rank {
+        background-color: #f2a900;
+        border: 1px solid #f2a900;
+        color: white;
+        font-size: 18px;
+        font-family: 'Baskerville', serif;
+        padding: 10px;
+    }
+    .name {
+        color: gray;
+        font-weight: 500;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 14px;
+    }
+    .value {
+        color: gray;
+        font-weight: 600;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        margin-left: 25px;
+    }
+    #preloader {
+        margin: 0 auto !important;
+        width: 500px;
+        height: 500px;
+        position: fixed !important;
+        top: 25% !important;
+        left: 35% !important;
+    }
+    .dont-show {
+        display: none;
+    }
+    .dropdown-content li > span {
+        color: #f2a900;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+    }
+    .select-wrapper input {
+        color: #f2a900;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+    }
+    .err-text {
+        font-size: 20px;
+        color: rgb(175, 80, 80);
+        font-weight: 300;
+    }
+    .link {
+        font-weight: 400;
+        color: #f2a900;
+    }
+    .link:hover {
+        text-decoration: #f2a900 underline;
+    }
+    #overview-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background: #f2a900;
+    }
+    .overview-list-item {
+        padding: 20px;      
+    }
+    .overview-list-item-label {
+        display: block;
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        color: #fff;
+    }
+    .overview-list-item-value {
+        color: #fff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+    }
+    .header {
+        color: #f2a900;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .chart-card {
+        text-align: center;
+    }
+    /* canvas properties */
+    canvas {
+        height: 50% !important;
+    }
+}
+
+/* Global Decls */
+body::-webkit-scrollbar {
+    width: 1em;
+} 
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+} 
+body::-webkit-scrollbar-thumb {
+  background-color: #f2a900;
+  outline: 1px solid slategrey;
+}
+body {
+    scrollbar-width: 3px;
+}
+
+table::-webkit-scrollbar {
+    width: 0.40em;
+}
+ 
+table::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+table::-webkit-scrollbar-thumb {
+  background-color: #f2a900;
+  outline: 1px solid slategrey;
+}
+tbody::-webkit-scrollbar {
+    width: 0.40em;
+}
+ 
+tbody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+tbody::-webkit-scrollbar-thumb {
+  background-color: #f2a900;
+  outline: 1px solid slategrey;
+}
+tbody {
+    scrollbar-width: 3px;
+}
+footer {
+    width: 100%;
+    max-width: 1920px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+}
+footer p {
+    color: #f2a900;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+

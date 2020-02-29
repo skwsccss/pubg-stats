@@ -1,0 +1,66 @@
+<!-- Display top 3 -->
+<% var top3 = leaderboard.splice(0, 3); %>
+<div class="row container">
+    <% top3.forEach(function(top){ %>
+        <div class="col leaderboard-top3-card-col">
+            <div class="card leaderboard-top3-card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <span class="rank"><%= top.attributes.rank %></span>
+                        <span class="name"><%= top.attributes.name %></span>
+                    </span>
+                    <div class="horizontal-divider"></div>
+                    <table class="responsive-table">
+                        <tbody>
+                            <tr>
+                                <td class="attr-label">Wins</td>
+                                <td class="attr-value"><%= top.attributes.stats.wins %></td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="attr-label">K/D</td>
+                                <td class="attr-value"><%= top.attributes.stats.killDeathRatio %></td>
+                            </tr>
+                            <tr>
+                                <td class="attr-label">Avg Damage</td>
+                                <td class="attr-value"><%= top.attributes.stats.averageDamage %></td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="attr-label">Avg Rank</td>
+                                <td class="attr-value"><%= top.attributes.stats.averageRank %></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+</div>
+<div class="container">
+    <!-- Put the rest here -->
+    <% var rest = leaderboard; %>
+    <table class="responsive-table">
+        <thead>
+            <th>Player</th>
+            <th>Rank</th>
+            <th>Wins</th>
+            <th>Kill/Death</th>
+            <th>Win Ratio</th>
+            <th>Avg Damage</th>
+            <th>Avg Rank</th>
+        </thead>
+        <tbody>
+            <% rest.forEach(function(row, index) { %>
+                <tr class=<%= index % 2 === 0 ? 'alt-row' : '' %>>
+                    <td><%= row.attributes.name %></td>
+                    <td><%= row.attributes.rank %></td>
+                    <td><%= row.attributes.stats.wins %></td>
+                    <td><%= row.attributes.stats.killDeathRatio %></td>
+                    <td><%= row.attributes.stats.winRatio %></td>
+                    <td><%= row.attributes.stats.averageDamage %></td>
+                    <td><%= row.attributes.stats.averageRank %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+    

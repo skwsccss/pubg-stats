@@ -1,0 +1,18 @@
+<body>
+    <!-- 
+        Part 1: Top Horizontal Menu
+        ---------------------------- 
+        Top horizontal, not fixed, custom color;
+        4 options: Home(use for player search), Leaderboard, Weapons, Lifetime
+    -->
+    <%- include("topnav", { active: 'Home' }) %>
+    <!-- Part 2: Hero Search Unit 
+        --------------------------
+        A hero unit with a single background image and 
+        a search option for player name
+    -->
+    <div id="hero-unit">
+        <img id="hero-image" src="/imgs/pubg.jpg">
+        <%- include('playersearch') %>
+    </div>
+    

@@ -1,0 +1,14 @@
+let lc = 0;
+s.split('\n').map(line => {
+    if(line.startsWith("[img]")) return ''; // skip if img
+    if(line.startsWith("[list]")) line = line.replace("[list][*]", `${++lc} `);
+    if(line.startsWith("[*]")) line = line.replace('[*]', `${++lc} `); 
+    if(line.endsWith("[/list]")) {
+        line = line.replace("[/list]", "");
+        lc = 0;
+    }
+    if(line.endsWith("[/list][/list]")) line = line.replace("[/list][/list]", "");
+    if(line.startsWith("[b]")) line = line.replace("[b]", "");
+    if(line.endsWith("[/b]")) line = line.replace("[/b]", ""); 
+    return line;
+}).forEach(line => console.log(line));

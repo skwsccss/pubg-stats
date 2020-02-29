@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <%- include('header') %>
+    <body>
+        <%- include('topnav', { active: 'Player Lookup' }) %>
+        <div class="horizontal-full-width-spacer"></div>
+        <div class="container" id="stats-container">
+            <div class="card" id="player-info-card"><!-- info-card start -->
+                <div class="card-content">
+                    <span class="card-title">
+                        <form>
+                            <input id="player-info-name-input"
+                                value=<%= playerName ? playerName : "" %> 
+                                placeholder=<%= !playerName ? "Enter player name" : "" %>>
+                        </form>
+                    </span>
+                </div>
+                <div class="card-action">
+                    <% var activePlatform = !activePlatform ? 'steam' : activePlatform; %>
+                    <div class="label">Platform</div>
+                    <% var plats = [
+                        { value: 'steam', name: 'Steam' },
+                        { value: 'kakao', name: 'kakao' },
+                        { value: 'psn', name: 'psn' },
+                        { value: 'xbox', name: 'xbox' }
+                    ]; %>
+                    <div id="player-info-card-action-col">
+                        <ul id="player-info-platform-sel">
+                            <% plats.forEach(function(p) { %>
+                                <li class=<%= p.value === activePlatform ? 'selected' : 'not-selected' %> value=<%= p.value %> 
+                                    onclick="selectPlatformPlayerStats(this)">
+                                    <%= p.name %>
+                                </li>
+                            <% }); %>   
+                        </ul>
+                        <a id="player-stats-search-button" class="btn" onclick="getPlayerStats()">
+                            Search
+                            <i class="material-icons right">send</i>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- info-card end -->
+            <% if(stats) { %>
+                <%- include('details-card', { stats: stats }) %>
+            <% } %>        
+        </div>
+        <%- include('footer') %>
+</html>

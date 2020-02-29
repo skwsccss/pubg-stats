@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('header') %>
+    <!--
+        Part 3: Leaderboard Selection Options
+        -------------------------------------
+        Present as buttons and that can be selected;
+        based on selection, load the leaderboards
+    -->
+    <body class="scrollable">
+        <%- include('topnav', { active: "Leaderboard" }) %>
+        <%- include('leaderboard-sel', { 
+            activePlatform: 'steam',
+            activeMode: 'solo'
+        }) %>
+        <%- include('leaderboard-list', {
+            leaderboard: leaderboard
+        }) %>
+        <%- include('footer') %>
+    </body>
+    
+</html>

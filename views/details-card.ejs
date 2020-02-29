@@ -1,0 +1,68 @@
+<div id="details-card-wrapper"><!-- details card start -->
+    
+    <% if(stats.length && stats.length < 1) { %>
+        <div>No details to show yet!</div>
+    <% } else { %>
+        <% var o = stats[0]; %>
+        <% if(o && o.gameModeStats) { %>
+            <% var modes = ['solo','duo','squad','solo-fpp','duo-fpp','squad-fpp']; %>
+            <% var topAttrs = ['kills', 'headshotKills', 'damageDealt']; %>
+            <% modes.forEach(function(mode) { %>
+                <% var st = o.gameModeStats[mode]; %>
+                <% if(st) { %>
+                    <% var cardClass = ""; %>
+                    <% if(mode === 'solo') { %>
+                        <% cardClass = "card player-stat-card solo-card"; %>
+                    <%  } else if(mode === 'duo') { %>
+                        <% cardClass = "card player-stat-card duo-card"; %>
+                    <% } else if(mode === 'squad') { %>
+                        <% cardClass = "card player-stat-card squad-card"; %>
+                    <% } else { %>
+                        <% cardClass = "card player-stat-card other-stat-card"; %>
+                    <% } %>
+                    <div class="<%= cardClass %>">
+                        <span class="card-title"><%= mode[0].toUpperCase() + mode.substr(1) %></span>
+                        <% if(['solo', 'duo', 'squad'].indexOf(mode) !== -1) { %>
+                            <span class="card-icon">
+                                <img src="<%= 'imgs/' + mode + '.png' %>" alt="game mode icon">
+                            </span>
+                        <% } %>
+                        <div class="horizontal-divider"></div>
+                        <div class="card-content">
+                            <table class="player-stat-table highlight-table">
+                                <tbody>
+                                    <% topAttrs.forEach(function(attr) { %>
+                                        <tr>
+                                            <td>
+                                                <%= attr[0].toUpperCase() + attr.substr(1) %>
+                                            </td>
+                                            <td>
+                                                <%= st[attr] %>
+                                            </td>
+                                        </tr>
+                                    <% }); %>
+                                </tbody>
+                            </table>
+                            <table class="player-stat-table">
+                                <tbody>
+                                    <% var other = Object.keys(st).filter(function(a) { return topAttrs.indexOf(a) === -1}); %>
+                                    <% other.forEach(function(attr){ %>
+                                        <tr>
+                                            <td>
+                                                <%= attr[0].toUpperCase() + attr.substr(1) %>
+                                            </td>
+                                            <td>
+                                                <%= st[attr] %>
+                                            </td>
+                                        </tr>
+                                    <% }); %>                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <% } %>
+            <% }); %>
+        <% } %> 
+    <% } %>
+        
+</div><!-- details card end -->    
